@@ -12,14 +12,25 @@ public class hw01_105021010{
 		Scanner scn = new Scanner(System.in);
 		int a = scn.nextInt();
 		int b = 1;
-		int c = 0;
-		for(int i=1;i<=a;i--){
-		c = b+c;
+		int c = 1;
+		int d = 0;
+		if(a == 1){
+			System.out.print("1");
+		}else if(a==2){
+			System.out.print("1,1");
+		}else if(a>=2){
+			System.out.print("1,1");
+		for(int i = 3; i<=a ; i++){	
+		d = b+c;
+		c = b;
+		b = d;
+		System.out.print(","+d);
 		
-		System.out.print(b+"\t");
-		}
 		
 
 	}
 
+		}
+	}
 }
+
